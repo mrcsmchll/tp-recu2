@@ -10,7 +10,7 @@ class Controller {
     static getHora = (req, res) => {
 
         let mensaje
-        if (api.obtenerHora() >= 6 || api.obtenerHora() >= 12) {
+        if (api.obtenerHora() >= 6 || api.obtenerHora() <= 12) {
             mensaje = 'Buenos dias!'
         }
         if (api.obtenerHora() >= 13 || api.obtenerHora() <= 19) {
